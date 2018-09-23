@@ -115,8 +115,8 @@
       gender: {value: ''},
       birthdate: {value: ''},
       //lymph: {value: ''}
-      temp: {value: ''}
-      weight: {value: ''}
+      temp: {value: ''},
+      weight: {value: ''},
       bmi: {value: ''}
 
       // Cerner SoF Tutorial Observations
