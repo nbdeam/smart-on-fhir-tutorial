@@ -63,6 +63,10 @@
           // var hdl = byCodes('2085-9');
           // var ldl = byCodes('2089-1');
 
+          var temp = byCodes("8310-5");
+          var weight = byCodes("3141-9");
+          var bmi = byCodes("39156-5");
+
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
@@ -72,6 +76,9 @@
 
           // Observations
           p.lymph = getQuantityValueAndUnit(lymph[0]);
+          p.temp = getQuantityValueAndUnit(temp[0]);
+          p.weight = getQuantityValueAndUnit(weight[0]);
+          p.bmi = getQuantityValueAndUnit(bmi[0]);
 
 
           // Cerner SoF Tutorial Observations
@@ -108,6 +115,9 @@
       gender: {value: ''},
       birthdate: {value: ''},
       lymph: {value: ''}
+      temp: {value: ''}
+      weight: {value: ''}
+      bmi: {value: ''}
 
       // Cerner SoF Tutorial Observations
       // height: {value: ''},
@@ -156,6 +166,9 @@
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
     $('#lymph').html(p.lymph);
+    $('#temp').html(p.temp);
+    $('#weight').html(p.weight);
+    $('#bmi').html(p.bmi);
     
     // Cerner SoF Tutorial Observations
 
