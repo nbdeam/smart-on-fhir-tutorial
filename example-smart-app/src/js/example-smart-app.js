@@ -55,7 +55,7 @@
           }
 
           // Observations
-          lymph = byCodes('26478-8');
+          //lymph = byCodes('26478-8');
           // Cerner SoF Tutorial Observations
           // var height = byCodes('8302-2');
           // var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -75,7 +75,7 @@
           p.lname = lname;
 
           // Observations
-          p.lymph = getQuantityValueAndUnit(lymph[0]);
+          //p.lymph = getQuantityValueAndUnit(lymph[0]);
           p.temp = getQuantityValueAndUnit(temp[0]);
           p.weight = getQuantityValueAndUnit(weight[0]);
           p.bmi = getQuantityValueAndUnit(bmi[0]);
@@ -114,7 +114,7 @@
       lname: {value: ''},
       gender: {value: ''},
       birthdate: {value: ''},
-      lymph: {value: ''}
+      //lymph: {value: ''}
       temp: {value: ''}
       weight: {value: ''}
       bmi: {value: ''}
@@ -152,6 +152,7 @@
         typeof ob.valueQuantity != 'undefined' &&
         typeof ob.valueQuantity.value != 'undefined' &&
         typeof ob.valueQuantity.unit != 'undefined') {
+          console.log('Value: ' + ob.valueQuantity.value + ', Unit: ' + ob.valueQuantity.unit);
           return ob.valueQuantity.value + ' ' + ob.valueQuantity.unit;
     } else {
       return undefined;
@@ -165,7 +166,7 @@
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
-    $('#lymph').html(p.lymph);
+    //$('#lymph').html(p.lymph);
     $('#temp').html(p.temp);
     $('#weight').html(p.weight);
     $('#bmi').html(p.bmi);
