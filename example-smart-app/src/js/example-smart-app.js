@@ -32,11 +32,6 @@
           }
         });
 
-
-        console.log("byCodes:");
-        console.log(byCodes("8310-5"));
-        console.log(byCodes("3141-9"));
-        console.log(byCodes("39156-5"));
         console.log('patient:');
         console.log(patient)
 
@@ -45,8 +40,9 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           console.log("byCodes:");
-          console.log(byCodes('26478-8'));
-          console.log(byCodes('2345-7'));
+          console.log(byCodes("8310-5"));
+          console.log(byCodes("3141-9"));
+          console.log(byCodes("39156-5"));
 
           var gender = patient.gender;
 
