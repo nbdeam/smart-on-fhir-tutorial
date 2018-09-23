@@ -34,8 +34,9 @@
 
 
         console.log("byCodes:");
-        console.log(byCodes("26478-8"));
-        console.log(byCodes("2345-7"));
+        console.log(byCodes("8310-5"));
+        console.log(byCodes("3141-9"));
+        console.log(byCodes("39156-5"));
         console.log('patient:');
         console.log(patient)
 
